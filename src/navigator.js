@@ -1,9 +1,9 @@
-import React from "react";
-import { StyleSheet } from "react-native";
-import { StackNavigator } from "react-navigation";
-import Home from "./containers/Home";
-import Counter from "./containers/Counter";
-import Camera from "./components/Camera";
+import React from 'react';
+import { StyleSheet } from 'react-native';
+import { StackNavigator } from 'react-navigation';
+import Home from './containers/Home';
+import Counter from './containers/Counter';
+import Camera from './components/Camera';
 
 const styles = StyleSheet.create({
   tabBar: {
@@ -21,7 +21,7 @@ const AppNavigator = new StackNavigator(
     Camera: { screen: Camera }
   },
   {
-    headerMode: "none"
+    headerMode: 'none'
   }
 );
 

@@ -1,7 +1,7 @@
 import { NavigationActions } from 'react-navigation/src/react-navigation';
 import AppNavigator from '../navigator';
 
-const initialNavState = AppNavigator.router.getStateForAction(NavigationActions.reset({
+/*const initialNavState = AppNavigator.router.getStateForAction(NavigationActions.reset({
   index: 0,
   key: 'Init',
   actions: [
@@ -10,13 +10,13 @@ const initialNavState = AppNavigator.router.getStateForAction(NavigationActions.
       params: {}
     })
   ]
-}));
+}));*/
 
-/*const initialNavState = {
+const initialNavState = {
   index: 0,
   key: 'Init',
-  routes: [{ routeName: 'App', params: {} }]
-};*/
+  routes: [{ routeName: 'Home', params: {} }]
+};
 
 export default (state = initialNavState, action) =>
   AppNavigator.router.getStateForAction(action, state) || state;
